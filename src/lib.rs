@@ -12,6 +12,7 @@ pub use macos::MacOs as NativeOs;
 mod windows;
 #[cfg(target_os = "windows")]
 pub use self::windows::WindowsOs as NativeOs;
+pub use self::windows::process::WindowsProcess as Process;
 #[cfg(target_os = "windows")]
 use crate::keyboard::OsKeyboardVtbl;
 
